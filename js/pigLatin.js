@@ -1,7 +1,7 @@
 exports.translate = function (word) {
   let wordList = word.split(" ");
   for (let index in wordList) {
-    temp = wordList[index];
+    let temp = wordList[index];
     if (temp[0].match(/[aeiou]/i)) {
       temp += "ay";
     } else {
