@@ -16,11 +16,18 @@ console.log("counts 'sch' as a single phoneme:");
 console.log(pig.translate("school") === "oolschay");
 console.log("counts 'qu' as a single phoneme:");
 console.log(pig.translate("quiet") === "ietquay");
-console.log("counts 'qu' as a consonant even when it's preceded by a consonant:");
+console.log(
+  "counts 'qu' as a consonant even when it's preceded by a consonant:"
+);
 console.log(pig.translate("square") === "aresquay");
 console.log("translates many words:");
-console.log(pig.translate("the quick brown fox") === "ethay ickquay ownbray oxfay");
-
-// write a test asserting that capitalized words are still capitalized
-// (but with a different initial capital letter, of course) retain the
-// punctuation from the original phrase
+console.log(
+  pig.translate("the quick brown fox") === "ethay ickquay ownbray oxfay"
+);
+console.log(
+  "Asserts that capitalized words are still capitalized and punctuations stay in place"
+);
+console.log(
+  pig.translate("The quick, agile brown fox!") ===
+    "Ethay ickquay, agileay ownbray oxfay!"
+);
