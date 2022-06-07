@@ -11,7 +11,4 @@ print(f"counts 'sch' as a single phoneme: {translate('school') == 'oolschay'}")
 print(f"counts 'qu' as a single phoneme: {translate('quiet') == 'ietquay'}")
 print(f"counts 'qu' as a consonant even when it's preceded by a consonant: {translate('square') == 'aresquay'}")
 print(f"translates many words: {translate('the quick brown fox') == 'ethay ickquay ownbray oxfay'}")
-
-# write a test asserting that capitalized words are still capitalized
-# (but with a different initial capital letter, of course) retain the
-# punctuation from the original phrase
+print(f"Asserts that capitalized words are still capitalized and punctuations stay in place: {translate('The quick, agile brown fox!') == 'Ethay ickquay, agileay ownbray oxfay!'}")
